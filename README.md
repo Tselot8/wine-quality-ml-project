@@ -138,7 +138,7 @@ cd wine-quality-ml-project
 ```
 2. Run the Streamlit application:
 ```bash 
-streamlit run app/app.py
+streamlit run app/streamlit_app.py
 ```
 ## 10. Reproducibility & Code Quality
 

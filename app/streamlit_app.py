@@ -3,9 +3,12 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
 # Load the trained model
-model = joblib.load("../data/best_model.pkl")
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "data" / "best_model.pkl"
+model = joblib.load(MODEL_PATH)
 
 st.title("Wine Quality Prediction App 🍷")
 
