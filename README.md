@@ -115,7 +115,32 @@ data = pd.read_csv("data/winequality_processed.csv")
 
 predictions = model.predict(data.drop("quality_label", axis=1))
 ```
-## 9. Reproducibility & Code Quality
+---
+
+## 9. Deployment (Bonus – Local Streamlit Application)
+
+As an optional bonus component, the trained model was deployed as a **local Streamlit web application**.  
+The purpose of this deployment is to demonstrate model loading, inference, and basic user interaction through a simple web interface.
+
+### Deployment Features
+- Loads the trained Random Forest model (`best_model.pkl`)
+- Allows users to input physicochemical properties of wine
+- Predicts wine quality as **Good** or **Bad**
+- Runs locally in a web browser
+
+This satisfies the deployment requirement specified in the course guidelines using a **local interface**, which is sufficient for the bonus component.
+
+### How to Run the Streamlit App
+
+1. Navigate to the project root directory:
+```bash
+cd wine-quality-ml-project
+```
+2. Run the Streamlit application:
+```bash 
+streamlit run app/app.py
+```
+## 10. Reproducibility & Code Quality
 
 - Modular Jupyter notebooks
 - Fixed random seeds
