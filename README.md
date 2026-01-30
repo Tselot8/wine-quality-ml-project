@@ -104,18 +104,6 @@ cd wine-quality-ml-project
 
 pip install -r requirements.txt
 ```
-### Run the model
-
-```bash
-import joblib
-import pandas as pd
-
-model = joblib.load("data/best_model.pkl")
-data = pd.read_csv("data/winequality_processed.csv")
-
-predictions = model.predict(data.drop("quality_label", axis=1))
-```
----
 
 ## 9. Deployment (Bonus – Local Streamlit Application)
 
