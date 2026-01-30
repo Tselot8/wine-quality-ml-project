@@ -5,3 +5,4 @@ seaborn
 scikit-learn
 altair==4.2.2
 streamlit==1.19.0
+python_version == "3.10"
